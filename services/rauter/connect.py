@@ -4,8 +4,6 @@ import mysql.connector
 class Connect:
     _instance = None
 
-# REQUIRED_VARS=("DB_HOST" "DB_USER" "DB_PASS" "DB_NAME")
-
     def __new__(cls):
         if not cls._instance:
             cls._instance = super().__new__(cls)
@@ -15,10 +13,10 @@ class Connect:
 
     def _init_connection(self):
             self.mydb = mysql.connector.connect(
-                host="DB_HOST", # לראות מאיפה הוא יקבל את זה
-                user="DB_USER",  # לראות מאיפה הוא יקבל את זה
-                password="DB_PASS",  # לראות מאיפה הוא יקבל את זה
-                database="DB_NAME",  # לראות מאיפה הוא יקבל את זה
+                host="", # לראות מאיפה הוא יקבל את זה
+                user="myuser",  # לראות מאיפה הוא יקבל את זה
+                password="mypassword",  # לראות מאיפה הוא יקבל את זה
+                database="mydb",  # לראות מאיפה הוא יקבל את זה
                 auth_plugin=''  # לראות מאיפה הוא יקבל את זה
             )
             self.cursor = self.mydb.cursor()

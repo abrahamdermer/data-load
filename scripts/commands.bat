@@ -5,3 +5,6 @@ oc new-app mysql-persistent -p MYSQL_USER=myuser -p MYSQL_PASSWORD=mypassword -p
 
 אין לי מושג איך להתחבר עליו מה"מחבר" שמופעל ע"י הDAL
 
+תחקנתי חלק מה המשתנים במחבר למה שהגדרתי ביצירת המאגר
+
+

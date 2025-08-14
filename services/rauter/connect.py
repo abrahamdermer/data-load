@@ -14,9 +14,9 @@ class Connect:
     def _init_connection(self):
             self.mydb = mysql.connector.connect(
                 host="", # לראות מאיפה הוא יקבל את זה
-                user="myuser",  # לראות מאיפה הוא יקבל את זה
-                password="mypassword",  # לראות מאיפה הוא יקבל את זה
-                database="mydb",  # לראות מאיפה הוא יקבל את זה
+                user="myuser", 
+                password="mypassword",
+                database="mydb",
                 auth_plugin=''  # לראות מאיפה הוא יקבל את זה
             )
             self.cursor = self.mydb.cursor()

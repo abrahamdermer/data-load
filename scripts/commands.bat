@@ -8,3 +8,5 @@ oc new-app mysql-persistent -p MYSQL_USER=myuser -p MYSQL_PASSWORD=mypassword -p
 תחקנתי חלק מה המשתנים במחבר למה שהגדרתי ביצירת המאגר
 
 
+הרצתי > docker build -t sest1 .
+בשביל לבנות תמונת דוקר

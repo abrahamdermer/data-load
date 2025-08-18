@@ -1,4 +1,4 @@
-from services.rauter.connect import Connect
+from services.Router.connect import Connect
 
 
 class DAL:

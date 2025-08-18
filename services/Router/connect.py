@@ -1,4 +1,5 @@
 import mysql.connector
+import os
 
 
 class Connect:
@@ -13,11 +14,10 @@ class Connect:
 
     def _init_connection(self):
             self.mydb = mysql.connector.connect(
-                host="", # לראות מאיפה הוא יקבל את זה
-                user="myuser", 
-                password="mypassword",
-                database="mydb",
-                auth_plugin=''  # לראות מאיפה הוא יקבל את זה
+                host= os.getenv('HOST'),
+                user=os.getenv('USER'), 
+                password=os.getenv('PASSWORD'),
+                database=os.getenv('DATABASE'),
             )
             self.cursor = self.mydb.cursor()
 
